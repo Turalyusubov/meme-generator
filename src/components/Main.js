@@ -39,7 +39,7 @@ export default function Main() {
                 <h2 className='about-head'>What is it for?</h2>
                 <p className='about-text'>This a cool free app to make memes online.
                     Click to get a random meme image,
-                    enter top and bottom textes and have have pure fun! :)</p>
+                    enter top and bottom textes and have pure fun! :)</p>
             </div>
             <div className='generator'>
                 <div className='form'>
