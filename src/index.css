@@ -1,13 +1,165 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(246, 253, 253);
+}
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  background: linear-gradient(to right, #67b26f, #4ca2cd);
+  color: white;
+  box-shadow: 0px 5px 10px rgb(167, 167, 167);
+  margin-bottom: 40px;
+}
+
+
+.navlogo {
+  height: 100%;
+  margin-right: 20px;
+}
+
+
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: grid;
+  grid-template: 60px 60px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 40px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  color: white;
+  background: linear-gradient(to right, #67b26f, #4ca2cd);
+  border: none;
+}
+
+.form--button,
+.form--input {
+  border-radius: 10px;
+  font-size: 18px;
+  min-height: 40px;
+}
+
+.form--input {
+  border: 1px solid #D5D4D8;
+  text-indent: 14px;
+}
+
+.generator,
+.generator-about {
+  width: 80%;
+}
+
+@media only screen and (max-width: 570px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form--input,
+  .form--button {
+    width: 100%;
+  }
+}
+
+.meme {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+
+.footer {
+  background-color: #bde1ec;
+  color: rgba(41, 41, 41, 0.7);
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a {
+  color: rgba(41, 41, 41, 0.7);
+  transition: all .25s;
+}
+
+.footer a:hover {
+  color: rgb(6, 34, 26);
+}
+
+.about-head,
+.about-text {
+  color: rgb(43, 43, 43);
+}
+
+.about-head {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-size: 20px;
+}
+
+.generator-about {
+  margin-bottom: 24px;
 }
